@@ -1,0 +1,260 @@
+---------------------------------------------------------------------------------
+--TRIGGER DE PERSON
+---------------------------------------------------------------------------------
+
+
+CREATE OR REPLACE TRIGGER "TRIGGER_PERSON" 
+BEFORE INSERT ON Person
+FOR EACH ROW
+BEGIN
+  :new.Id_Person := Person_seq.nextval;
+END;
+/
+
+
+---------------------------------------------------------------------------------
+--TRIGGER DE PARAMETER
+---------------------------------------------------------------------------------
+
+
+CREATE OR REPLACE TRIGGER "TRIGGER_PARAMETER" 
+BEFORE INSERT ON JOB_PARAMETER
+FOR EACH ROW
+BEGIN
+  :new.ID_JOB_PARAMETER := PARAMETER_SEQ.nextval;
+END;
+/
+
+---------------------------------------------------------------------------------
+--TRIGGER DE PROFESSION
+---------------------------------------------------------------------------------
+
+CREATE OR REPLACE TRIGGER "TRIGGER_PROFESSION" 
+BEFORE INSERT ON Profession
+FOR EACH ROW
+BEGIN
+  :new.Id_Profession := Profession_seq.nextval;
+END;
+/
+
+---------------------------------------------------------------------------------
+--TRIGGER DE PEOPLE_TYPE
+---------------------------------------------------------------------------------
+
+CREATE OR REPLACE TRIGGER "TRIGGER_PEOPLE_TYPE" 
+BEFORE INSERT ON People_Type
+FOR EACH ROW
+BEGIN
+  :new.Id_People_Type := People_Type_seq.nextval;
+END;
+/
+
+---------------------------------------------------------------------------------
+--TRIGGER DE SYSTEM_USER
+---------------------------------------------------------------------------------
+
+CREATE OR REPLACE TRIGGER "TRIGGER_SYSTEM_USER" 
+BEFORE INSERT ON System_User
+FOR EACH ROW
+BEGIN
+  :new.Id_System_User := System_User_seq.nextval;
+END;
+/
+
+
+---------------------------------------------------------------------------------
+--TRIGGER DE BINNACLE
+---------------------------------------------------------------------------------
+
+CREATE OR REPLACE TRIGGER "TRIGGER_BINNACLE" 
+BEFORE INSERT ON Binnacle
+FOR EACH ROW
+BEGIN
+  :new.Id_Binnacle := Binnacle_seq.nextval;
+END;
+/
+
+
+---------------------------------------------------------------------------------
+--TRIGGER DE SIGHTING
+---------------------------------------------------------------------------------
+
+CREATE OR REPLACE TRIGGER "TRIGGER_SIGHTING" 
+BEFORE INSERT ON Sighting
+FOR EACH ROW
+BEGIN
+  :new.Id_Sighting := Sighting_seq.nextval;
+END;
+/
+
+---------------------------------------------------------------------------------
+--TRIGGER DE PICTURE
+---------------------------------------------------------------------------------
+
+CREATE OR REPLACE TRIGGER "TRIGGER_PICTURE" 
+BEFORE INSERT ON Picture
+FOR EACH ROW
+BEGIN
+  :new.Id_Picture := Picture_seq.nextval;
+END;
+/
+
+---------------------------------------------------------------------------------
+--TRIGGER DE KIND
+---------------------------------------------------------------------------------
+
+CREATE OR REPLACE TRIGGER "TRIGGER_KIND" 
+BEFORE INSERT ON Kind
+FOR EACH ROW
+BEGIN
+  :new.Id_Kind := Kind_seq.nextval;
+END;
+/
+
+
+---------------------------------------------------------------------------------
+--TRIGGER DE ORDERLINESS
+---------------------------------------------------------------------------------
+
+CREATE OR REPLACE TRIGGER "TRIGGER_ORDERLINESS" 
+BEFORE INSERT ON Orderliness
+FOR EACH ROW
+BEGIN
+  :new.Id_Orderliness := Orderliness_seq.nextval;
+END;
+/
+
+---------------------------------------------------------------------------------
+--TRIGGER DE SUBORDER
+---------------------------------------------------------------------------------
+
+CREATE OR REPLACE TRIGGER "TRIGGER_SUBORDER" 
+BEFORE INSERT ON Suborder
+FOR EACH ROW
+BEGIN
+  :new.Id_Suborder := Suborder_seq.nextval;
+END;
+/
+
+---------------------------------------------------------------------------------
+--TRIGGER DE FAMILY
+---------------------------------------------------------------------------------
+
+CREATE OR REPLACE TRIGGER "TRIGGER_FAMILY" 
+BEFORE INSERT ON Family
+FOR EACH ROW
+BEGIN
+  :new.Id_Family := Family_seq.nextval;
+END;
+/
+
+---------------------------------------------------------------------------------
+--TRIGGER DE GENDER
+---------------------------------------------------------------------------------
+
+CREATE OR REPLACE TRIGGER "TRIGGER_GENDER" 
+BEFORE INSERT ON Gender
+FOR EACH ROW
+BEGIN
+  :new.Id_Gender := Gender_seq.nextval;
+END;
+/
+
+---------------------------------------------------------------------------------
+--TRIGGER DE SPECIES
+---------------------------------------------------------------------------------
+
+CREATE OR REPLACE TRIGGER "TRIGGER_SPECIES" 
+BEFORE INSERT ON Species
+FOR EACH ROW
+BEGIN
+  :new.Id_Species := Species_seq.nextval;
+END;
+/
+
+
+---------------------------------------------------------------------------------
+--TRIGGER DE STATURE
+---------------------------------------------------------------------------------
+
+CREATE OR REPLACE TRIGGER "TRIGGER_STATURE" 
+BEFORE INSERT ON Stature
+FOR EACH ROW
+BEGIN
+  :new.Id_Stature := Stature_seq.nextval;
+END;
+/
+
+---------------------------------------------------------------------------------
+--TRIGGER DE COLOR
+---------------------------------------------------------------------------------
+
+CREATE OR REPLACE TRIGGER "TRIGGER_COLOR" 
+BEFORE INSERT ON Color
+FOR EACH ROW
+BEGIN
+  :new.Id_Color := Color_seq.nextval;
+END;
+/
+
+---------------------------------------------------------------------------------
+--TRIGGER DE CONTINENT
+---------------------------------------------------------------------------------
+
+CREATE OR REPLACE TRIGGER "TRIGGER_CONTINENT" 
+BEFORE INSERT ON Continent
+FOR EACH ROW
+BEGIN
+  :new.Id_Continent := Continent_seq.nextval;
+END;
+/
+
+---------------------------------------------------------------------------------
+--TRIGGER DE COUNTRY
+---------------------------------------------------------------------------------
+
+CREATE OR REPLACE TRIGGER "TRIGGER_COUNTRY" 
+BEFORE INSERT ON Country
+FOR EACH ROW
+BEGIN
+  :new.Id_Country := Country_seq.nextval;
+END;
+/
+
+
+---------------------------------------------------------------------------------
+--TRIGGER DE PROVINCE
+---------------------------------------------------------------------------------
+
+CREATE OR REPLACE TRIGGER "TRIGGER_PROVINCE" 
+BEFORE INSERT ON Province
+FOR EACH ROW
+BEGIN
+  :new.Id_Province := Province_seq.nextval;
+END;
+/
+
+---------------------------------------------------------------------------------
+--TRIGGER DE CANTON
+---------------------------------------------------------------------------------
+
+CREATE OR REPLACE TRIGGER "TRIGGER_CANTON" 
+BEFORE INSERT ON Canton
+FOR EACH ROW
+BEGIN
+  :new.Id_Canton := Canton_seq.nextval;
+END;
+/
+
+
+---------------------------------------------------------------------------------
+--TRIGGER DE DISTRICT
+---------------------------------------------------------------------------------
+
+CREATE OR REPLACE TRIGGER "TRIGGER_DISTRICT" 
+BEFORE INSERT ON District
+FOR EACH ROW
+BEGIN
+  :new.Id_District := District_seq.nextval;
+END;
+/

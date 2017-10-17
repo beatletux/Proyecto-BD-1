@@ -1,0 +1,529 @@
+---------------------------------------------------------------------------------
+--TRIGGER DE PERSON
+---------------------------------------------------------------------------------
+
+create or replace
+TRIGGER CREATION_PERSON
+       BEFORE INSERT
+       ON PROGRA1.PERSON FOR EACH ROW
+BEGIN
+  :NEW.user_creation:= USER;
+  :NEW.date_creation:= SYSDATE;
+END;
+
+/
+create or replace
+TRIGGER MODIFICATION_PERSON
+       BEFORE INSERT
+       ON PROGRA1.PERSON FOR EACH ROW
+BEGIN
+  :NEW.user_last_modification:= USER;
+  :NEW.date_last_modification:= SYSDATE;
+END;
+/
+
+---------------------------------------------------------------------------------
+--TRIGGER DE PROFESSION
+---------------------------------------------------------------------------------
+
+create or replace
+TRIGGER CREATION_PROFESSION 
+	   BEFORE INSERT
+       ON PROGRA1.PROFESSION FOR EACH ROW
+BEGIN
+  :NEW.user_creation:= USER;
+  :NEW.date_creation:= SYSDATE;
+END;
+/
+create or replace
+TRIGGER MODIFICATION_PROFESSION
+	   BEFORE INSERT
+       ON PROGRA1.PROFESSION FOR EACH ROW
+BEGIN
+  :NEW.user_last_modification:= USER;
+  :NEW.date_last_modification:= SYSDATE;
+END;
+/
+
+---------------------------------------------------------------------------------
+--TRIGGER DE PEOPLE_TYPE
+---------------------------------------------------------------------------------
+
+create or replace
+TRIGGER CREATION_PEOPLE_TYPE 
+	   BEFORE INSERT
+       ON PROGRA1.PEOPLE_TYPE FOR EACH ROW
+BEGIN
+  :NEW.user_creation:= USER;
+  :NEW.date_creation:= SYSDATE;
+END;
+/
+create or replace
+TRIGGER MODIFICATION_PEOPLE_TYPE
+	   BEFORE INSERT
+       ON PROGRA1.PEOPLE_TYPE FOR EACH ROW
+BEGIN
+  :NEW.user_last_modification:= USER;
+  :NEW.date_last_modification:= SYSDATE;
+END;
+/
+
+---------------------------------------------------------------------------------
+--TRIGGER DE SYSTEM_USER
+---------------------------------------------------------------------------------
+
+create or replace
+TRIGGER CREATION_SYSTEM_USER 
+	   BEFORE INSERT
+       ON PROGRA1.SYSTEM_USER FOR EACH ROW
+BEGIN
+  :NEW.user_creation:= USER;
+  :NEW.date_creation:= SYSDATE;
+END;
+/
+create or replace
+TRIGGER MODIFICATION_SYSTEM_USER
+	   BEFORE INSERT
+       ON PROGRA1.SYSTEM_USER FOR EACH ROW
+BEGIN
+  :NEW.user_last_modification:= USER;
+  :NEW.date_last_modification:= SYSDATE;
+END;
+
+/
+---------------------------------------------------------------------------------
+--TRIGGER DE BINNACLE
+---------------------------------------------------------------------------------
+
+create or replace
+TRIGGER CREATION_BINNACLE 
+	   BEFORE INSERT
+       ON PROGRA1.BINNACLE FOR EACH ROW
+BEGIN
+  :NEW.user_creation:= USER;
+  :NEW.date_creation:= SYSDATE;
+END;
+/
+create or replace
+TRIGGER MODIFICATION_BINNACLE
+	   BEFORE INSERT
+       ON PROGRA1.BINNACLE FOR EACH ROW
+BEGIN
+  :NEW.user_last_modification:= USER;
+  :NEW.date_last_modification:= SYSDATE;
+END;
+
+/
+---------------------------------------------------------------------------------
+--TRIGGER DE SIGHTING
+---------------------------------------------------------------------------------
+
+create or replace
+TRIGGER CREATION_SIGHTING 
+	   BEFORE INSERT
+       ON PROGRA1.SIGHTING FOR EACH ROW
+BEGIN
+  :NEW.user_creation:= USER;
+  :NEW.date_creation:= SYSDATE;
+END;
+/
+create or replace
+TRIGGER MODIFICATION_SIGHTING
+	   BEFORE INSERT
+       ON PROGRA1.SIGHTING FOR EACH ROW
+BEGIN
+  :NEW.user_last_modification:= USER;
+  :NEW.date_last_modification:= SYSDATE;
+END;
+
+/
+---------------------------------------------------------------------------------
+--TRIGGER DE SIGHTINGXPERSON
+---------------------------------------------------------------------------------
+
+create or replace
+TRIGGER CREATION_SIGHTINGXPERSON 
+	   BEFORE INSERT
+       ON PROGRA1.SIGHTINGXPERSON FOR EACH ROW
+BEGIN
+  :NEW.user_creation:= USER;
+  :NEW.date_creation:= SYSDATE;
+END;
+/
+create or replace
+TRIGGER MODIFICATION_SIGHTINGXPERSON
+	   BEFORE INSERT
+       ON PROGRA1.SIGHTINGXPERSON FOR EACH ROW
+BEGIN
+  :NEW.user_last_modification:= USER;
+  :NEW.date_last_modification:= SYSDATE;
+END;
+
+/
+
+---------------------------------------------------------------------------------
+--TRIGGER DE PICTURE
+---------------------------------------------------------------------------------
+
+create or replace
+TRIGGER CREATION_PICTURE 
+	   BEFORE INSERT
+       ON PROGRA1.PICTURE FOR EACH ROW
+BEGIN
+  :NEW.user_creation:= USER;
+  :NEW.date_creation:= SYSDATE;
+END;
+/
+create or replace
+TRIGGER MODIFICATION_PICTURE
+	   BEFORE INSERT
+       ON PROGRA1.PICTURE FOR EACH ROW
+BEGIN
+  :NEW.user_last_modification:= USER;
+  :NEW.date_last_modification:= SYSDATE;
+END;
+
+/
+---------------------------------------------------------------------------------
+--TRIGGER DE KIND
+---------------------------------------------------------------------------------
+
+create or replace
+TRIGGER CREATION_KIND 
+	   BEFORE INSERT
+       ON PROGRA1.KIND FOR EACH ROW
+BEGIN
+  :NEW.user_creation:= USER;
+  :NEW.date_creation:= SYSDATE;
+END;
+/
+create or replace
+TRIGGER MODIFICATION_KIND
+	   BEFORE INSERT
+       ON PROGRA1.KIND FOR EACH ROW
+BEGIN
+  :NEW.user_last_modification:= USER;
+  :NEW.date_last_modification:= SYSDATE;
+END;
+
+/
+---------------------------------------------------------------------------------
+--TRIGGER DE ORDERLINESS
+---------------------------------------------------------------------------------
+
+create or replace
+TRIGGER CREATION_ORDERLINESS 
+	   BEFORE INSERT
+       ON PROGRA1.ORDERLINESS FOR EACH ROW
+BEGIN
+  :NEW.user_creation:= USER;
+  :NEW.date_creation:= SYSDATE;
+END;
+/
+create or replace
+TRIGGER MODIFICATION_ORDERLINESS
+	   BEFORE INSERT
+       ON PROGRA1.ORDERLINESS FOR EACH ROW
+BEGIN
+  :NEW.user_last_modification:= USER;
+  :NEW.date_last_modification:= SYSDATE;
+END;
+/
+
+---------------------------------------------------------------------------------
+--TRIGGER DE SUBORDER
+---------------------------------------------------------------------------------
+
+create or replace
+TRIGGER CREATION_SUBORDER 
+	   BEFORE INSERT
+       ON PROGRA1.SUBORDER FOR EACH ROW
+BEGIN
+  :NEW.user_creation:= USER;
+  :NEW.date_creation:= SYSDATE;
+END;
+/
+create or replace
+TRIGGER MODIFICATION_SUBORDER
+	   BEFORE INSERT
+       ON PROGRA1.SUBORDER FOR EACH ROW
+BEGIN
+  :NEW.user_last_modification:= USER;
+  :NEW.date_last_modification:= SYSDATE;
+END;
+/
+---------------------------------------------------------------------------------
+--TRIGGER DE FAMILY
+---------------------------------------------------------------------------------
+
+create or replace
+TRIGGER CREATION_FAMILY 
+	   BEFORE INSERT
+       ON PROGRA1.FAMILY FOR EACH ROW
+BEGIN
+  :NEW.user_creation:= USER;
+  :NEW.date_creation:= SYSDATE;
+END;
+/
+create or replace
+TRIGGER MODIFICATION_FAMILY
+	   BEFORE INSERT
+       ON PROGRA1.FAMILY FOR EACH ROW
+BEGIN
+  :NEW.user_last_modification:= USER;
+  :NEW.date_last_modification:= SYSDATE;
+END;
+/
+
+---------------------------------------------------------------------------------
+--TRIGGER DE GENDER
+---------------------------------------------------------------------------------
+
+create or replace
+TRIGGER CREATION_GENDER 
+	   BEFORE INSERT
+       ON PROGRA1.GENDER FOR EACH ROW
+BEGIN
+  :NEW.user_creation:= USER;
+  :NEW.date_creation:= SYSDATE;
+END;
+/
+create or replace
+TRIGGER MODIFICATION_GENDER
+	   BEFORE INSERT
+       ON PROGRA1.GENDER FOR EACH ROW
+BEGIN
+  :NEW.user_last_modification:= USER;
+  :NEW.date_last_modification:= SYSDATE;
+END;
+
+/
+---------------------------------------------------------------------------------
+--TRIGGER DE SPECIES
+---------------------------------------------------------------------------------
+
+create or replace
+TRIGGER CREATION_SPECIES 
+	   BEFORE INSERT
+       ON PROGRA1.SPECIES FOR EACH ROW
+BEGIN
+  :NEW.user_creation:= USER;
+  :NEW.date_creation:= SYSDATE;
+END;
+/
+create or replace
+TRIGGER MODIFICATION_SPECIES
+	   BEFORE INSERT
+       ON PROGRA1.SPECIES FOR EACH ROW
+BEGIN
+  :NEW.user_last_modification:= USER;
+  :NEW.date_last_modification:= SYSDATE;
+END;
+
+
+/
+---------------------------------------------------------------------------------
+--TRIGGER DE STATURE
+---------------------------------------------------------------------------------
+
+create or replace
+TRIGGER CREATION_STATURE 
+	   BEFORE INSERT
+       ON PROGRA1.STATURE FOR EACH ROW
+BEGIN
+  :NEW.user_creation:= USER;
+  :NEW.date_creation:= SYSDATE;
+END;
+/
+create or replace
+TRIGGER MODIFICATION_STATURE
+	   BEFORE INSERT
+       ON PROGRA1.STATURE FOR EACH ROW
+BEGIN
+  :NEW.user_last_modification:= USER;
+  :NEW.date_last_modification:= SYSDATE;
+END;
+/
+
+---------------------------------------------------------------------------------
+--TRIGGER DE COLOR
+---------------------------------------------------------------------------------
+
+create or replace
+TRIGGER CREATION_COLOR 
+	   BEFORE INSERT
+       ON PROGRA1.COLOR FOR EACH ROW
+BEGIN
+  :NEW.user_creation:= USER;
+  :NEW.date_creation:= SYSDATE;
+END;
+/
+create or replace
+TRIGGER MODIFICATION_COLOR
+	   BEFORE INSERT
+       ON PROGRA1.COLOR FOR EACH ROW
+BEGIN
+  :NEW.user_last_modification:= USER;
+  :NEW.date_last_modification:= SYSDATE;
+END;
+/
+
+---------------------------------------------------------------------------------
+--TRIGGER DE CONTINENT
+---------------------------------------------------------------------------------
+
+create or replace
+TRIGGER CREATION_CONTINENT 
+	   BEFORE INSERT
+       ON PROGRA1.CONTINENT FOR EACH ROW
+BEGIN
+  :NEW.user_creation:= USER;
+  :NEW.date_creation:= SYSDATE;
+END;
+/
+create or replace
+TRIGGER MODIFICATION_CONTINENT
+	   BEFORE INSERT
+       ON PROGRA1.CONTINENT FOR EACH ROW
+BEGIN
+  :NEW.user_last_modification:= USER;
+  :NEW.date_last_modification:= SYSDATE;
+END;
+/
+
+---------------------------------------------------------------------------------
+--TRIGGER DE COUNTRY
+---------------------------------------------------------------------------------
+
+create or replace
+TRIGGER CREATION_COUNTRY 
+	   BEFORE INSERT
+       ON PROGRA1.COUNTRY FOR EACH ROW
+BEGIN
+  :NEW.user_creation:= USER;
+  :NEW.date_creation:= SYSDATE;
+END;
+/
+create or replace
+TRIGGER MODIFICATION_COUNTRY
+	   BEFORE INSERT
+       ON PROGRA1.COUNTRY FOR EACH ROW
+BEGIN
+  :NEW.user_last_modification:= USER;
+  :NEW.date_last_modification:= SYSDATE;
+END;
+/
+
+---------------------------------------------------------------------------------
+--TRIGGER DE PROVINCE
+---------------------------------------------------------------------------------
+
+create or replace
+TRIGGER CREATION_PROVINCE 
+	   BEFORE INSERT
+       ON PROGRA1.PROVINCE FOR EACH ROW
+BEGIN
+  :NEW.user_creation:= USER;
+  :NEW.date_creation:= SYSDATE;
+END;
+/
+create or replace
+TRIGGER MODIFICATION_PROVINCE
+	   BEFORE INSERT
+       ON PROGRA1.PROVINCE FOR EACH ROW
+BEGIN
+  :NEW.user_last_modification:= USER;
+  :NEW.date_last_modification:= SYSDATE;
+END;
+/
+---------------------------------------------------------------------------------
+--TRIGGER DE CANTON
+---------------------------------------------------------------------------------
+
+create or replace
+TRIGGER CREATION_CANTON 
+	   BEFORE INSERT
+       ON PROGRA1.CANTON FOR EACH ROW
+BEGIN
+  :NEW.user_creation:= USER;
+  :NEW.date_creation:= SYSDATE;
+END;
+/
+create or replace
+TRIGGER MODIFICATION_CANTON
+	   BEFORE INSERT
+       ON PROGRA1.CANTON FOR EACH ROW
+BEGIN
+  :NEW.user_last_modification:= USER;
+  :NEW.date_last_modification:= SYSDATE;
+END;
+/
+
+---------------------------------------------------------------------------------
+--TRIGGER DE DISTRICT
+---------------------------------------------------------------------------------
+
+create or replace
+TRIGGER CREATION_DISTRICT 
+	   BEFORE INSERT
+       ON PROGRA1.DISTRICT FOR EACH ROW
+BEGIN
+  :NEW.user_creation:= USER;
+  :NEW.date_creation:= SYSDATE;
+END;
+/
+create or replace
+TRIGGER MODIFICATION_DISTRICT
+	   BEFORE INSERT
+       ON PROGRA1.DISTRICT FOR EACH ROW
+BEGIN
+  :NEW.user_last_modification:= USER;
+  :NEW.date_last_modification:= SYSDATE;
+END;
+
+
+/
+---------------------------------------------------------------------------------
+--TRIGGER DE KINDSXDISTRICT
+---------------------------------------------------------------------------------
+
+create or replace
+TRIGGER CREATION_KINDSXDISTRICT 
+	   BEFORE INSERT
+       ON PROGRA1.KINDSXDISTRICT FOR EACH ROW
+BEGIN
+  :NEW.user_creation:= USER;
+  :NEW.date_creation:= SYSDATE;
+END;
+/
+create or replace
+TRIGGER MODIFICATION_KINDSXDISTRICT
+	   BEFORE INSERT
+       ON PROGRA1.KINDSXDISTRICT FOR EACH ROW
+BEGIN
+  :NEW.user_last_modification:= USER;
+  :NEW.date_last_modification:= SYSDATE;
+END;
+
+/
+---------------------------------------------------------------------------------
+--TRIGGER DE KINDSXCOLOR
+---------------------------------------------------------------------------------
+
+create or replace
+TRIGGER CREATION_KINDSXCOLOR 
+	   BEFORE INSERT
+       ON PROGRA1.KINDSXCOLOR FOR EACH ROW
+BEGIN
+  :NEW.user_creation:= USER;
+  :NEW.date_creation:= SYSDATE;
+END;
+/
+create or replace
+TRIGGER MODIFICATION_KINDSXCOLOR
+	   BEFORE INSERT
+       ON PROGRA1.KINDSXCOLOR FOR EACH ROW
+BEGIN
+  :NEW.user_last_modification:= USER;
+  :NEW.date_last_modification:= SYSDATE;
+END;
